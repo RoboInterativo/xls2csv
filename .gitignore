@@ -5,7 +5,9 @@ __pycache__/
 
 # C extensions
 *.so
-
+in/
+in_arc/
+out/
 # Distribution / packaging
 .Python
 build/
@@ -76,7 +78,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-
+config.yml
 # IPython
 profile_default/
 ipython_config.py

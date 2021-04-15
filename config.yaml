@@ -1,0 +1,4 @@
+start_from_line: 3
+input_dir: ./in
+output_dir: ./out
+
