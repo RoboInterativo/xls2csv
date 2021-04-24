@@ -23,17 +23,13 @@ def convert_file(file):
 def main():
     files=[]
     current_path=( os.path.dirname (os.path.abspath(__file__)) )
-    f2=open(os.path.join(current_path,'in')) ,file.rstrip('.xlsx' )+'.csv','w')
-    csv=''
-    for f in os.listdir('./in/'):
-        
-        if f.endswith('.xlsx'):
-            files.append(f)
-    print  (files)
-    print (os.path.join(current_path,'in' ,files[0] ) )
-    for file in files:
-        convert_file(file)
-    #print(sheet_ranges['D18'].value)
+
+    for file_name in os.listdir('./in/'):
+        f2=open( os.path.join(current_path,'out'  , file_name.rstrip ('.xlsx' )+'.csv'  ), 'w'  )
+        csv=''
+        if file_name.endswith('.xlsx'):
+            convert_file(file_name)
+
 
 if __name__ == "__main__":
     main()
