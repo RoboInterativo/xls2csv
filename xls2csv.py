@@ -23,7 +23,7 @@ def convert_file(file):
 def main():
     files=[]
     current_path=( os.path.dirname (os.path.abspath(__file__)) )
-    f2=open('./1.csv','w')
+    f2=open(os.path.join(current_path,'in' ,file.rstrip('.xlsx' )+'.csv','w')
     csv=''
     for f in os.listdir('./in/'):
         
