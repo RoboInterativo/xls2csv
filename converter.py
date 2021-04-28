@@ -16,7 +16,7 @@ def convert_file(file):
     temp_dir=  os.path.join(current_path ,temp)
     
     shell_command_str = 'python xlsx2csv.py  {0} {1} --all'.format(input_file, temp_dir)
-    print shell_command_str
+    #print shell_command_str
     os.system ( shell_command_str )
     os.remove(   os.path.join(current_path,path_out  ,file.replace('.xlsx','.csv' )   )) 
     for file_name in os.listdir( temp_dir ):
